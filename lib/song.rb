@@ -32,7 +32,7 @@ class Song
     song = Song.new(song_name)
     # Artist.find(artist_name)  
     # binding.pry 
-    Artist.add_song(song) 
+    artist = Artist.add_song(song) 
     song
     # song = song.artist_name
     # song
