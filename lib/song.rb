@@ -30,9 +30,9 @@ class Song
     artist = file.split(" - ")[0]
     song_name = file.split(" - ")[1]
     song = self.new(song_name) 
-                binding.pry
-
     artist = Artist.find_or_create_by_name(artist)
+                    binding.pry
+
     song.artist = artist
   end
   
