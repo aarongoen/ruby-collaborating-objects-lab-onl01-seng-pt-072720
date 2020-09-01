@@ -31,9 +31,9 @@ class Song
     song_name = file.split(" - ")[1]
     song = self.new(song_name) 
     artist = Artist.find_or_create_by_name(artist)
-                    binding.pry
-
     song.artist = artist
+                        binding.pry
+
   end
   
   # def artist_name=(name)
